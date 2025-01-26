@@ -26,7 +26,7 @@ class CourseService
     {
         $course = new Course();
         $course->title = $data['title'];
-        $course->description = isset($data['description']);
+        $course->description = $data['description'];
         $course->price = $data['price'];
         $course->duration = $data['duration'];
         $course->instructor_name = $data['instructor_name'];
@@ -39,7 +39,7 @@ class CourseService
     public function updateCourse(Course $course, array $data)
     {
         $course->title = $data['title'];
-        $course->description = isset($data['description']);
+        $course->description = $data['description'];
         $course->price = $data['price'];
         $course->duration = $data['duration'];
         $course->instructor_name = $data['instructor_name'];
